@@ -149,7 +149,7 @@ function itemCard(item, section, text) {
     <a class="content-card" href="${detailUrl}">
       ${media}
       <span class="card-body">
-        <span class="card-eyebrow">${escapeHtml(section.label)}</span>
+        <!-- <span class="card-eyebrow">${escapeHtml(section.label)}</span> -->
         <span class="card-title">${escapeHtml(item.title)}</span>
         ${text ? `<span class="card-text">${escapeHtml(text.trim())}</span>` : ""}
       </span>

@@ -15,7 +15,7 @@
       "items": [
         {
           "id": "akustische-skizze",
-          "title": "Akustische Skizze",
+          "title": "Akustische Skizze v1.2",
           "summary": "Interne Audiodatei mit Lyrics und PDF-Lead-Sheet.",
           "image": "assets/images/song-akustisch.png",
           "imageAlt": "Akustische Song-Grafik",
@@ -23,7 +23,7 @@
           "media": {
             "kind": "internal-audio",
             "src": "assets/audio/acoustic-loop.wav",
-            "title": "Akustische Skizze"
+            "title": "Akustische Skizze v1.3"
           },
           "lyricsFile": "assets/text/lyrics-akustische-skizze.txt",
           "pdf": "assets/pdfs/01_example.pdf"

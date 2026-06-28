@@ -6,7 +6,7 @@
   "sections": [
     {
       "key": "songs",
-      "label": "Songs",
+      "label": "Songs_label",
       "page": "songs.html",
       "description": "Song-Ideen, Demos und Sammlungen mit Medienframe, Lyrics und PDF.",
       "homeImage": "assets/images/home-songs.png",
@@ -26,7 +26,7 @@
             "title": "Akustische Skizze"
           },
           "lyricsFile": "assets/text/lyrics-akustische-skizze.txt",
-          "pdf": "assets/pdfs/song-sheet.pdf"
+          "pdf": "assets/pdfs/01_example.pdf"
         },
         {
           "id": "youtube-demo",
@@ -37,7 +37,7 @@
           "text": "Beispiel fuer ein externes YouTube-Video mit Lyrics und PDF.",
           "media": {
             "kind": "youtube",
-            "src": "https://www.youtube-nocookie.com/embed/ysz5S6PUM-U",
+            "src": "https://www.youtube-nocookie.com/embed/L0MK7qz13bU?rel=0&modestbranding=1&controls=1&iv_load_policy=3&showinfo=0",
             "title": "YouTube Demo"
           },
           "lyricsFile": "assets/text/lyrics-youtube-demo.txt",
@@ -82,7 +82,7 @@
             "title": "Aufnahme-Notiz"
           },
           "lyricsFile": "assets/text/lyrics-notiz-aufnahme.txt",
-          "pdf": "assets/pdfs/notes-sheet.pdf"
+          "pdf": "assets/pdfs/01_blockfloete.pdf"
         },
         {
           "id": "projektplan",

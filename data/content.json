@@ -1,0 +1,144 @@
+{
+  "site": {
+    "name": "Content Hub",
+    "description": "Eine mobile PWA fuer Songs, Notes und Sonstiges."
+  },
+  "sections": [
+    {
+      "key": "songs",
+      "label": "Songs",
+      "page": "songs.html",
+      "description": "Song-Ideen, Demos und Sammlungen mit Medienframe, Lyrics und PDF.",
+      "homeImage": "assets/images/home-songs.png",
+      "homeImageAlt": "Grafische Song-Wellenform",
+      "homeTextFile": "assets/text/home-songs.txt",
+      "items": [
+        {
+          "id": "akustische-skizze",
+          "title": "Akustische Skizze",
+          "summary": "Interne Audiodatei mit Lyrics und PDF-Lead-Sheet.",
+          "image": "assets/images/song-akustisch.png",
+          "imageAlt": "Akustische Song-Grafik",
+          "text": "Lokale Audiodatei in einem internen Frame mit Text und PDF.",
+          "media": {
+            "kind": "internal-audio",
+            "src": "assets/audio/acoustic-loop.wav",
+            "title": "Akustische Skizze"
+          },
+          "lyricsFile": "assets/text/lyrics-akustische-skizze.txt",
+          "pdf": "assets/pdfs/song-sheet.pdf"
+        },
+        {
+          "id": "youtube-demo",
+          "title": "YouTube Demo",
+          "summary": "Externer YouTube-Frame mit austauschbarer Video-ID.",
+          "image": "assets/images/song-youtube.png",
+          "imageAlt": "Video-Frame-Grafik",
+          "text": "Beispiel fuer ein externes YouTube-Video mit Lyrics und PDF.",
+          "media": {
+            "kind": "youtube",
+            "src": "https://www.youtube-nocookie.com/embed/ysz5S6PUM-U",
+            "title": "YouTube Demo"
+          },
+          "lyricsFile": "assets/text/lyrics-youtube-demo.txt",
+          "pdf": "assets/pdfs/song-sheet.pdf"
+        },
+        {
+          "id": "sammlung",
+          "title": "Song-Sammlung",
+          "summary": "Eine textorientierte Song-Sammlung mit optionalem Bild.",
+          "image": "assets/images/song-sammlung.png",
+          "imageAlt": "Song-Sammlung als Kartenstapel",
+          "text": "Mehrere Ideen in einem Eintrag; die Anzahl der Karten kommt aus JSON.",
+          "media": {
+            "kind": "internal-audio",
+            "src": "assets/audio/acoustic-loop.wav",
+            "title": "Song-Sammlung"
+          },
+          "lyricsFile": "assets/text/lyrics-sammlung.txt",
+          "pdf": "assets/pdfs/song-sheet.pdf"
+        }
+      ]
+    },
+    {
+      "key": "notes",
+      "label": "Notes",
+      "page": "notes.html",
+      "description": "Notizen, Mitschnitte und Arbeitsmaterial mit gleicher Grid-Struktur.",
+      "homeImage": "assets/images/home-notes.png",
+      "homeImageAlt": "Notizblatt mit Linien",
+      "homeTextFile": "assets/text/home-notes.txt",
+      "items": [
+        {
+          "id": "notiz-aufnahme",
+          "title": "Aufnahme-Notiz",
+          "summary": "Eine Notiz mit eingebettetem Audioframe und PDF.",
+          "image": "assets/images/note-aufnahme.png",
+          "imageAlt": "Aufnahme-Notiz mit Pegeln",
+          "text": "Text und Bild koennen kombiniert oder einzeln genutzt werden.",
+          "media": {
+            "kind": "internal-audio",
+            "src": "assets/audio/acoustic-loop.wav",
+            "title": "Aufnahme-Notiz"
+          },
+          "lyricsFile": "assets/text/lyrics-notiz-aufnahme.txt",
+          "pdf": "assets/pdfs/notes-sheet.pdf"
+        },
+        {
+          "id": "projektplan",
+          "title": "Projektplan",
+          "summary": "Textlastiger Eintrag ohne Vorschaubild im Grid.",
+          "text": "Dieses Grid zeigt nur Text und fuehrt trotzdem zur Detailseite.",
+          "media": {
+            "kind": "youtube",
+            "src": "https://www.youtube-nocookie.com/embed/ysz5S6PUM-U",
+            "title": "Projektplan Video"
+          },
+          "lyricsFile": "assets/text/lyrics-projektplan.txt",
+          "pdf": "assets/pdfs/notes-sheet.pdf"
+        }
+      ]
+    },
+    {
+      "key": "sonstiges",
+      "label": "Sonstiges",
+      "page": "sonstiges.html",
+      "description": "Freie Inhalte fuer alles, was nicht direkt Songs oder Notes ist.",
+      "homeImage": "assets/images/home-sonstiges.png",
+      "homeImageAlt": "Mosaik aus freien Inhalten",
+      "homeTextFile": "assets/text/home-sonstiges.txt",
+      "items": [
+        {
+          "id": "archiv",
+          "title": "Archiv",
+          "summary": "Ein Archiv-Eintrag mit Bild, Text, Medienframe und PDF.",
+          "image": "assets/images/misc-archiv.png",
+          "imageAlt": "Archiv-Grafik",
+          "text": "Fuer Referenzen, alte Versionen oder Zusatzmaterial.",
+          "media": {
+            "kind": "internal-audio",
+            "src": "assets/audio/acoustic-loop.wav",
+            "title": "Archiv Audio"
+          },
+          "lyricsFile": "assets/text/lyrics-archiv.txt",
+          "pdf": "assets/pdfs/misc-sheet.pdf"
+        },
+        {
+          "id": "ressourcen",
+          "title": "Ressourcen",
+          "summary": "Links und Unterlagen mit optionalem Vorschaubild.",
+          "image": "assets/images/misc-ressourcen.png",
+          "imageAlt": "Ressourcen-Grafik",
+          "text": "Ein flexibler Eintrag fuer Materialien oder externe Inhalte.",
+          "media": {
+            "kind": "youtube",
+            "src": "https://www.youtube-nocookie.com/embed/ysz5S6PUM-U",
+            "title": "Ressourcen Video"
+          },
+          "lyricsFile": "assets/text/lyrics-ressourcen.txt",
+          "pdf": "assets/pdfs/misc-sheet.pdf"
+        }
+      ]
+    }
+  ]
+}

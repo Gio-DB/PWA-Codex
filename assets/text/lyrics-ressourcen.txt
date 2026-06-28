@@ -1,0 +1,4 @@
+Ressourcen
+Links, Hinweise und Begleittexte lassen sich hier als freie Textdatei pflegen.
+
+PDF und Medienframe bleiben optional austauschbar.

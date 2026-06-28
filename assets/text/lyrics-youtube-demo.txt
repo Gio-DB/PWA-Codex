@@ -1,0 +1,6 @@
+Verse
+Dieses Feld kann Lyrics, Notizen oder eine Beschreibung enthalten.
+Ersetze den Text durch deine eigenen Zeilen.
+
+Chorus
+Der Frame darueber kann auf ein externes YouTube-Video zeigen.

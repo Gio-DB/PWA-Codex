@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b7f79">
+    <meta name="description" content="Songs als JSON-gesteuerte PWA-Unterseite.">
+    <title>Songs | Content Hub</title>
+    <link rel="icon" href="assets/icons/icon-192.png" type="image/png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/app.js" defer></script>
+  </head>
+  <body data-page="songs">
+    <a class="skip-link" href="#app">Zum Inhalt springen</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Content Hub Startseite">
+        <span class="brand-mark" aria-hidden="true">CH</span>
+        <span class="brand-name">Content Hub</span>
+      </a>
+      <nav id="desktop-nav" class="desktop-nav" aria-label="Hauptnavigation"></nav>
+    </header>
+    <main id="app" class="page-shell" tabindex="-1"></main>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile Hauptnavigation"></nav>
+  </body>
+</html>

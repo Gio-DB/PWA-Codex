@@ -1,0 +1,1 @@
+Notes sind fuer Mitschriften, Ideen und Projektmaterial gedacht. Neue Eintraege entstehen nur durch weitere JSON-Objekte.

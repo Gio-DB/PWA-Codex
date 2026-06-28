@@ -1,0 +1,5 @@
+Projektplan
+1. Material sammeln
+2. Reihenfolge festlegen
+3. Demo exportieren
+4. PDF finalisieren

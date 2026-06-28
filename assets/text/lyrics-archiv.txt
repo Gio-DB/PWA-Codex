@@ -1,0 +1,5 @@
+Archiv
+Hier koennen alte Versionen, Quellen oder Zusatztexte stehen.
+
+Hinweis
+Die Detailseite bleibt identisch, nur die Datenquelle aendert sich.

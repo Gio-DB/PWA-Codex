@@ -6,10 +6,10 @@
   "sections": [
     {
       "key": "songs",
-      "label": "Songs_label",
+      "label": "Songs 123",
       "page": "songs.html",
       "description": "Song-Ideen, Demos und Sammlungen mit Medienframe, Lyrics und PDF.",
-      "homeImage": "assets/images/home-songs.png",
+      "homeImage": "assets/images/home-songs_v1.png",
       "homeImageAlt": "Grafische Song-Wellenform",
       "homeTextFile": "assets/text/home-songs.txt",
       "items": [
@@ -29,12 +29,12 @@
           "pdf": "assets/pdfs/01_example.pdf"
         },
         {
-          "id": "youtube-demo",
-          "title": "YouTube Demo",
+          "id": "02",
+          "title": "Let It Go",
           "summary": "Externer YouTube-Frame mit austauschbarer Video-ID.",
-          "image": "assets/images/song-youtube.png",
+          "image": "https://i3.ytimg.com/vi/YVVTZgwYwVo/hqdefault.jpg",
           "imageAlt": "Video-Frame-Grafik",
-          "text": "Beispiel fuer ein externes YouTube-Video mit Lyrics und PDF.",
+          "text": "by Idina Menzel",
           "media": {
             "kind": "youtube",
             "src": "https://www.youtube-nocookie.com/embed/L0MK7qz13bU?rel=0&modestbranding=1&controls=1&iv_load_policy=3&showinfo=0",
@@ -65,7 +65,7 @@
       "label": "Notes",
       "page": "notes.html",
       "description": "Notizen, Mitschnitte und Arbeitsmaterial mit gleicher Grid-Struktur.",
-      "homeImage": "assets/images/home-notes.png",
+      "homeImage": "assets/images/home-notes_v1.png",
       "homeImageAlt": "Notizblatt mit Linien",
       "homeTextFile": "assets/text/home-notes.txt",
       "items": [
@@ -104,7 +104,7 @@
       "label": "Sonstiges",
       "page": "sonstiges.html",
       "description": "Freie Inhalte fuer alles, was nicht direkt Songs oder Notes ist.",
-      "homeImage": "assets/images/home-sonstiges.png",
+      "homeImage": "assets/images/home-sonstiges_v1.png",
       "homeImageAlt": "Mosaik aus freien Inhalten",
       "homeTextFile": "assets/text/home-sonstiges.txt",
       "items": [

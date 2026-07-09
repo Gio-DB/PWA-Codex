@@ -141,9 +141,9 @@
       ]
     },
         {
-      "key": "songs",
-      "label": "Songs 123",
-      "page": "songs.html",
+      "key": "detail",
+      "label": "Detail 123",
+      "page": "detail.html",
       "description": "Song-Ideen, Demos und Sammlungen mit Medienframe, Lyrics und PDF.",
       "homeImage": "assets/images/home-songs_v1.png",
       "homeImageAlt": "Grafische Song-Wellenform",
@@ -193,86 +193,6 @@
           },
           "lyricsFile": "assets/text/lyrics-sammlung.txt",
           "pdf": "assets/pdfs/song-sheet.pdf"
-        }
-      ]
-    },
-    {
-      "key": "notes",
-      "label": "Notes",
-      "page": "notes.html",
-      "description": "Notizen, Mitschnitte und Arbeitsmaterial mit gleicher Grid-Struktur.",
-      "homeImage": "assets/images/home-notes_v1.png",
-      "homeImageAlt": "Notizblatt mit Linien",
-      "homeTextFile": "assets/text/home-notes.txt",
-      "items": [
-        {
-          "id": "notiz-aufnahme",
-          "title": "Aufnahme-Notiz",
-          "summary": "Eine Notiz mit eingebettetem Audioframe und PDF.",
-          "image": "assets/images/note-aufnahme.png",
-          "imageAlt": "Aufnahme-Notiz mit Pegeln",
-          "text": "Text und Bild koennen kombiniert oder einzeln genutzt werden.",
-          "media": {
-            "kind": "internal-audio",
-            "src": "assets/audio/acoustic-loop.wav",
-            "title": "Aufnahme-Notiz"
-          },
-          "lyricsFile": "assets/text/lyrics-notiz-aufnahme.txt",
-          "pdf": "assets/pdfs/01_blockfloete.pdf"
-        },
-        {
-          "id": "projektplan",
-          "title": "Projektplan",
-          "summary": "Textlastiger Eintrag ohne Vorschaubild im Grid.",
-          "text": "Dieses Grid zeigt nur Text und fuehrt trotzdem zur Detailseite.",
-          "media": {
-            "kind": "youtube",
-            "src": "https://www.youtube-nocookie.com/embed/ysz5S6PUM-U",
-            "title": "Projektplan Video"
-          },
-          "lyricsFile": "assets/text/lyrics-projektplan.txt",
-          "pdf": "assets/pdfs/notes-sheet.pdf"
-        }
-      ]
-    },
-    {
-      "key": "sonstiges",
-      "label": "Sonstiges",
-      "page": "sonstiges.html",
-      "description": "Freie Inhalte fuer alles, was nicht direkt Songs oder Notes ist.",
-      "homeImage": "assets/images/home-sonstiges_v1.png",
-      "homeImageAlt": "Mosaik aus freien Inhalten",
-      "homeTextFile": "assets/text/home-sonstiges.txt",
-      "items": [
-        {
-          "id": "archiv",
-          "title": "Archiv",
-          "summary": "Ein Archiv-Eintrag mit Bild, Text, Medienframe und PDF.",
-          "image": "assets/images/misc-archiv.png",
-          "imageAlt": "Archiv-Grafik",
-          "text": "Fuer Referenzen, alte Versionen oder Zusatzmaterial.",
-          "media": {
-            "kind": "internal-audio",
-            "src": "assets/audio/acoustic-loop.wav",
-            "title": "Archiv Audio"
-          },
-          "lyricsFile": "assets/text/lyrics-archiv.txt",
-          "pdf": "assets/pdfs/misc-sheet.pdf"
-        },
-        {
-          "id": "ressourcen",
-          "title": "Ressourcen",
-          "summary": "Links und Unterlagen mit optionalem Vorschaubild.",
-          "image": "assets/images/misc-ressourcen.png",
-          "imageAlt": "Ressourcen-Grafik",
-          "text": "Ein flexibler Eintrag fuer Materialien oder externe Inhalte.",
-          "media": {
-            "kind": "youtube",
-            "src": "https://www.youtube-nocookie.com/embed/ysz5S6PUM-U",
-            "title": "Ressourcen Video"
-          },
-          "lyricsFile": "assets/text/lyrics-ressourcen.txt",
-          "pdf": "assets/pdfs/misc-sheet.pdf"
         }
       ]
     }

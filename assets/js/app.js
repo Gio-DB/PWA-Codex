@@ -1,10 +1,16 @@
 const DATA_URL = "data/content.json";
+const DIRECT_NAV_LIMIT = 3;
+const NAV_TARGETS = [
+  { id: "desktop-nav", variant: "desktop" },
+  { id: "mobile-nav", variant: "mobile" }
+];
 
 const ICONS = {
   home: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="m3 10.8 9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>`,
   songs: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>`,
   notes: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M6 3h9l3 3v15H6z"/><path d="M14 3v4h4"/><path d="M9 12h6"/><path d="M9 16h6"/></svg>`,
   sonstiges: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>`,
+  more: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="5" cy="12" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="19" cy="12" r="1.8"/></svg>`,
   arrowLeft: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>`,
   file: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M6 3h9l3 3v15H6z"/><path d="M14 3v4h4"/></svg>`
 };
@@ -70,29 +76,172 @@ async function getText(url) {
 }
 
 function renderNav(data, activeKey) {
+  const navItems = buildNavigationItems(data);
+  const controlCount = Math.min(navItems.length, DIRECT_NAV_LIMIT) + (navItems.length > DIRECT_NAV_LIMIT ? 1 : 0);
+
+  NAV_TARGETS.forEach((target) => {
+    const nav = document.getElementById(target.id);
+    if (!nav) {
+      return;
+    }
+
+    nav.style.setProperty("--nav-item-count", String(Math.max(controlCount, 1)));
+    nav.innerHTML = navMarkup(navItems, activeKey, target.variant);
+  });
+
+  initNavOverflow();
+}
+
+function buildNavigationItems(data) {
   const navItems = [
     { key: "home", label: "Home", href: "index.html" },
-    ...data.sections.map((section) => ({
+    ...(Array.isArray(data.sections) ? data.sections : []).map((section) => ({
       key: section.key,
       label: section.label,
       href: section.page
     }))
   ];
 
-  const navMarkup = navItems.map((item) => navLink(item, activeKey)).join("");
-  document.getElementById("desktop-nav").innerHTML = navMarkup;
-  document.getElementById("mobile-nav").innerHTML = navMarkup;
+  return uniqueNavigationItems(navItems);
 }
 
-function navLink(item, activeKey) {
+function uniqueNavigationItems(navItems) {
+  const seenKeys = new Set();
+
+  return navItems.filter((item) => {
+    if (!item.key || !item.label || !item.href) {
+      console.warn("Ungueltiger Navigationseintrag ignoriert.", item);
+      return false;
+    }
+
+    if (seenKeys.has(item.key)) {
+      console.warn(`Doppelter Navigationseintrag ignoriert: ${item.key}`);
+      return false;
+    }
+
+    seenKeys.add(item.key);
+    return true;
+  });
+}
+
+function navMarkup(navItems, activeKey, variant) {
+  const visibleItems = navItems.slice(0, DIRECT_NAV_LIMIT);
+  const overflowItems = navItems.slice(DIRECT_NAV_LIMIT);
+  const visibleMarkup = visibleItems.map((item) => navLink(item, activeKey)).join("");
+
+  if (!overflowItems.length) {
+    return visibleMarkup;
+  }
+
+  return `${visibleMarkup}${navOverflowMarkup(overflowItems, activeKey, variant)}`;
+}
+
+function navOverflowMarkup(overflowItems, activeKey, variant) {
+  const menuId = `${variant}-nav-more-menu`;
+  const hasActiveOverflowItem = overflowItems.some((item) => item.key === activeKey);
+  const activeState = hasActiveOverflowItem ? ' data-active="true"' : "";
+  const label = hasActiveOverflowItem
+    ? "Weitere Navigation, aktuelle Seite enthalten"
+    : "Weitere Navigation";
+
+  return `
+    <div class="nav-more" data-nav-more>
+      <button
+        class="nav-link nav-more-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="${escapeAttr(menuId)}"
+        aria-label="${escapeAttr(label)}"${activeState}>
+        ${ICONS.more}
+        <span class="nav-label">Mehr</span>
+      </button>
+      <div class="nav-more-menu" id="${escapeAttr(menuId)}" hidden>
+        ${overflowItems.map((item) => navLink(item, activeKey, "nav-more-link")).join("")}
+      </div>
+    </div>
+  `;
+}
+
+function navLink(item, activeKey, extraClass = "") {
   const isActive = item.key === activeKey;
   const icon = ICONS[item.key] || ICONS.file;
+  const className = ["nav-link", extraClass].filter(Boolean).join(" ");
+
   return `
-    <a class="nav-link" href="${escapeAttr(item.href)}" ${isActive ? 'aria-current="page"' : ""}>
+    <a class="${escapeAttr(className)}" href="${escapeAttr(item.href)}" ${isActive ? 'aria-current="page"' : ""}>
       ${icon}
       <span class="nav-label">${escapeHtml(item.label)}</span>
     </a>
   `;
+}
+
+function initNavOverflow() {
+  if (initNavOverflow.bound) {
+    return;
+  }
+
+  document.addEventListener("click", handleNavOverflowClick);
+  document.addEventListener("keydown", handleNavOverflowKeydown);
+  initNavOverflow.bound = true;
+}
+
+function handleNavOverflowClick(event) {
+  if (!(event.target instanceof Element)) {
+    return;
+  }
+
+  const toggle = event.target.closest(".nav-more-toggle");
+  if (toggle) {
+    const navMore = toggle.closest("[data-nav-more]");
+    const isOpen = toggle.getAttribute("aria-expanded") === "true";
+    closeAllNavOverflow(navMore);
+    setNavOverflowOpen(navMore, !isOpen);
+    return;
+  }
+
+  if (event.target.closest(".nav-more-menu .nav-link")) {
+    closeAllNavOverflow();
+    return;
+  }
+
+  if (!event.target.closest("[data-nav-more]")) {
+    closeAllNavOverflow();
+  }
+}
+
+function handleNavOverflowKeydown(event) {
+  if (event.key === "Escape") {
+    closeAllNavOverflow(null, { restoreFocus: true });
+  }
+}
+
+function closeAllNavOverflow(exceptNavMore = null, options = {}) {
+  document.querySelectorAll("[data-nav-more]").forEach((navMore) => {
+    if (navMore !== exceptNavMore) {
+      setNavOverflowOpen(navMore, false, options);
+    }
+  });
+}
+
+function setNavOverflowOpen(navMore, isOpen, options = {}) {
+  if (!navMore) {
+    return;
+  }
+
+  const toggle = navMore.querySelector(".nav-more-toggle");
+  const menu = navMore.querySelector(".nav-more-menu");
+  if (!toggle || !menu) {
+    return;
+  }
+
+  const hadFocus = navMore.contains(document.activeElement);
+  toggle.setAttribute("aria-expanded", String(isOpen));
+  menu.hidden = !isOpen;
+  navMore.dataset.open = String(isOpen);
+
+  if (!isOpen && options.restoreFocus && hadFocus) {
+    toggle.focus();
+  }
 }
 
 async function renderHome(data) {

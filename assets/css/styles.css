@@ -120,6 +120,11 @@ a {
   font-weight: 750;
 }
 
+.nav-link:hover {
+  background: var(--surface-strong);
+  color: var(--ink);
+}
+
 .desktop-nav .nav-link {
   padding: 0 14px;
 }
@@ -133,6 +138,65 @@ a {
 .nav-link[aria-current="page"] {
   background: var(--teal-soft);
   color: var(--teal);
+}
+
+.nav-more {
+  position: relative;
+  min-width: 0;
+}
+
+.nav-more-toggle {
+  width: 100%;
+  border: 0;
+  appearance: none;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+.nav-more-toggle[aria-expanded="true"] {
+  background: var(--surface-strong);
+  color: var(--ink);
+}
+
+.nav-more-toggle[data-active="true"] {
+  background: var(--teal-soft);
+  color: var(--teal);
+}
+
+.nav-more-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 25;
+  display: grid;
+  gap: 4px;
+  width: max-content;
+  min-width: 210px;
+  max-width: min(280px, calc(100vw - 24px));
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgb(255 255 255 / 98%);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+}
+
+.nav-more-menu[hidden] {
+  display: none;
+}
+
+.nav-more-menu .nav-link {
+  width: 100%;
+  justify-content: flex-start;
+  min-height: 42px;
+  padding: 0 10px;
+}
+
+.nav-more-menu .nav-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .page-shell {
@@ -351,13 +415,17 @@ a {
   bottom: 0;
   z-index: 15;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(var(--nav-item-count, 4), minmax(0, 1fr));
   gap: 4px;
   min-height: calc(68px + env(safe-area-inset-bottom));
   padding: 6px 8px calc(6px + env(safe-area-inset-bottom));
   border-top: 1px solid var(--line);
   background: rgb(255 255 255 / 96%);
   backdrop-filter: blur(16px);
+}
+
+.mobile-nav .nav-more {
+  display: grid;
 }
 
 .mobile-nav .nav-link {
@@ -373,6 +441,33 @@ a {
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mobile-nav .nav-more-menu {
+  position: fixed;
+  top: auto;
+  right: 8px;
+  bottom: calc(78px + env(safe-area-inset-bottom));
+  left: 8px;
+  z-index: 16;
+  width: auto;
+  min-width: 0;
+  max-width: none;
+  max-height: min(360px, 48vh);
+  overflow-y: auto;
+}
+
+.mobile-nav .nav-more-menu .nav-link {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 8px;
+  min-height: 46px;
+  padding: 0 12px;
+  font-size: 0.92rem;
+}
+
+.mobile-nav .nav-more-menu .nav-label {
   white-space: nowrap;
 }
 

@@ -15,15 +15,15 @@
       "items": [
         {
           "id": "01",
-          "title": "Akustische Skizze v1.2",
-          "summary": "Interne Audiodatei mit Lyrics und PDF-Lead-Sheet.",
+          "title": "Do You Want to Build a Snowman?",
+          "summary": "Agatha Lee Monn, Katie Lopez, Kristen Bell, and Idina Menzel.",
           "image": "https://img.youtube.com/vi/TeQ_TTyLGMs/sddefault.jpg",
-          "imageAlt": "Akustische Song-Grafik",
-          "text": "Lokale Audiodatei in einem internen Frame mit Text und PDF.",
+          "imageAlt": "Video-Frame-Grafik",
+          "text": "Agatha Lee Monn, Katie Lopez, Kristen Bell, and Idina Menzel.",
           "media": {
-            "kind": "internal-audio",
-            "src": "https://www.youtube-nocookie.com/embed/L0MK7qz13bU?rel=0&modestbranding=1&controls=1&iv_load_policy=3&showinfo=0",
-            "title": "Akustische Skizze v1.3"
+            "kind": "youtube",
+            "src": "https://www.youtube-nocookie.com/embed/TeQ_TTyLGMs?rel=0&modestbranding=1&controls=1&iv_load_policy=3&showinfo=0",
+            "title": "Do You Want to Build a Snowman?"
           },
           "lyricsFile": "assets/text/lyrics-akustische-skizze.txt",
           "pdf": "assets/pdfs/01_example.pdf"
@@ -32,13 +32,13 @@
           "id": "02",
           "title": "Let It Go",
           "summary": "Externer YouTube-Frame mit austauschbarer Video-ID.",
-          "image": "https://i3.ytimg.com/vi/YVVTZgwYwVo/hqdefault.jpg",
+          "image": "https://img.youtube.com/vi/L0MK7qz13bU/sddefault.jpg",
           "imageAlt": "Video-Frame-Grafik",
           "text": "by Idina Menzel",
           "media": {
             "kind": "youtube",
-            "src": "https://www.youtube-nocookie.com/embed/TeQ_TTyLGMs?rel=0&modestbranding=1&controls=1&iv_load_policy=3&showinfo=0",
-            "title": "YouTube Demo"
+            "src": "https://www.youtube-nocookie.com/embed/L0MK7qz13bU?rel=0&modestbranding=1&controls=1&iv_load_policy=3&showinfo=0",
+            "title": "Let It Go"
           },
           "lyricsFile": "assets/text/lyrics-youtube-demo.txt",
           "pdf": "assets/pdfs/song-sheet.pdf"

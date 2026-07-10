@@ -101,3 +101,7 @@ PWA-Codex/
 5. Der Workflow `.github/workflows/pages.yml` veroeffentlicht die statische Seite automatisch.
 
 GitHub Pages stellt die Seite danach unter `https://<user>.github.io/<repo>/` bereit.
+
+
+https://codebeautify.org/youtube-thumbnail-grabber?&VU=https://www.youtube.com/watch?v=TeQ_TTyLGMs&list=RDTeQ_TTyLGMs&start_radio=1
+

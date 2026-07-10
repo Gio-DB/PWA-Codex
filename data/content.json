@@ -5,24 +5,24 @@
   },
   "sections": [
     {
-      "key": "songs",
-      "label": "Songs 123",
-      "page": "songs.html",
-      "description": "Song-Ideen, Demos und Sammlungen mit Medienframe, Lyrics und PDF.",
+      "key": "disney",
+      "label": "Disney",
+      "page": "1_disney.html",
+      "description": "Singen macht Spass! Hier sind ein paar Disney-Songs zum Mitsingen.",
       "homeImage": "assets/images/home-songs_v1.png",
       "homeImageAlt": "Grafische Song-Wellenform",
       "homeTextFile": "assets/text/home-songs.txt",
       "items": [
         {
-          "id": "akustische-skizze",
+          "id": "01",
           "title": "Akustische Skizze v1.2",
           "summary": "Interne Audiodatei mit Lyrics und PDF-Lead-Sheet.",
-          "image": "assets/images/song-akustisch.png",
+          "image": "https://img.youtube.com/vi/TeQ_TTyLGMs/sddefault.jpg",
           "imageAlt": "Akustische Song-Grafik",
           "text": "Lokale Audiodatei in einem internen Frame mit Text und PDF.",
           "media": {
             "kind": "internal-audio",
-            "src": "assets/audio/acoustic-loop.wav",
+            "src": "https://www.youtube-nocookie.com/embed/TeQ_TTyLGMs?rel=0&modestbranding=1&controls=1&iv_load_policy=3&showinfo=0",
             "title": "Akustische Skizze v1.3"
           },
           "lyricsFile": "assets/text/lyrics-akustische-skizze.txt",

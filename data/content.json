@@ -44,16 +44,16 @@
           "pdf": "assets/pdfs/song-sheet.pdf"
         },
         {
-          "id": "sammlung",
-          "title": "Song-Sammlung",
-          "summary": "Eine textorientierte Song-Sammlung mit optionalem Bild.",
-          "image": "assets/images/song-sammlung.png",
-          "imageAlt": "Song-Sammlung als Kartenstapel",
-          "text": "Mehrere Ideen in einem Eintrag; die Anzahl der Karten kommt aus JSON.",
+          "id": "03",
+          "title": "Can I Get A Chee Hoo?",
+          "summary": "---",
+          "image": "https://img.youtube.com/vi/HnnvrFJEGts/sddefault.jpg",
+          "imageAlt": "---",
+          "text": "Dwayne Johnson",
           "media": {
-            "kind": "internal-audio",
-            "src": "assets/audio/acoustic-loop.wav",
-            "title": "Song-Sammlung"
+            "kind": "youtube",
+            "src": "https://www.youtube-nocookie.com/embed/HnnvrFJEGts?rel=0&modestbranding=1&controls=1&iv_load_policy=3&showinfo=0",
+            "title": "Can I Get A Chee Hoo?"
           },
           "lyricsFile": "assets/text/lyrics-sammlung.txt",
           "pdf": "assets/pdfs/song-sheet.pdf"

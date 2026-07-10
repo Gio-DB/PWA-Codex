@@ -1,4 +1,4 @@
-const CACHE_NAME = "content_hub_v2.5";
+const CACHE_NAME = "content_hub_v2.6";
 
 const CORE_ASSETS = [
   "./",

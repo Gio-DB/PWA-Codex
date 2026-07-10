@@ -25,8 +25,8 @@
             "src": "https://www.youtube-nocookie.com/embed/TeQ_TTyLGMs?rel=0&modestbranding=1&controls=1&iv_load_policy=3&showinfo=0",
             "title": "Do You Want to Build a Snowman?"
           },
-          "lyricsFile": "assets/text/lyrics-akustische-skizze.txt",
-          "pdf": "assets/pdfs/01_example.pdf"
+          "lyricsFile": "assets/text/disney_01.txt",
+          "pdf": "assets/pdfs/song-sheet.pdf"
         },
         {
           "id": "02",
@@ -40,7 +40,7 @@
             "src": "https://www.youtube-nocookie.com/embed/L0MK7qz13bU?rel=0&modestbranding=1&controls=1&iv_load_policy=3&showinfo=0",
             "title": "Let It Go"
           },
-          "lyricsFile": "assets/text/lyrics-youtube-demo.txt",
+          "lyricsFile": "assets/text/disney_02.txt",
           "pdf": "assets/pdfs/song-sheet.pdf"
         },
         {
@@ -55,7 +55,7 @@
             "src": "https://www.youtube-nocookie.com/embed/HnnvrFJEGts?rel=0&modestbranding=1&controls=1&iv_load_policy=3&showinfo=0",
             "title": "Can I Get A Chee Hoo?"
           },
-          "lyricsFile": "assets/text/lyrics-sammlung.txt",
+          "lyricsFile": "assets/text/disney_03.txt",
           "pdf": "assets/pdfs/song-sheet.pdf"
         }
       ]

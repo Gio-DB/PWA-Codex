@@ -1,8 +1,9 @@
-const CACHE_NAME = "content_hub_v2.6";
+const CACHE_NAME = "content_hub_v2.7";
 
 const CORE_ASSETS = [
   "./",
   "./index.html",
+  "./1_disney.html",
   "./songs.html",
   "./notes.html",
   "./sonstiges.html",
@@ -12,12 +13,12 @@ const CORE_ASSETS = [
   "./assets/css/styles.css",
   "./assets/js/app.js",
   "./data/content.json",
+  "./assets/text/disney_01.txt",
+  "./assets/text/disney_02.txt",
+  "./assets/text/disney_03.txt",
   "./assets/text/home-songs.txt",
   "./assets/text/home-notes.txt",
   "./assets/text/home-sonstiges.txt",
-  "./assets/text/lyrics-akustische-skizze.txt",
-  "./assets/text/lyrics-youtube-demo.txt",
-  "./assets/text/lyrics-sammlung.txt",
   "./assets/text/lyrics-notiz-aufnahme.txt",
   "./assets/text/lyrics-projektplan.txt",
   "./assets/text/lyrics-archiv.txt",

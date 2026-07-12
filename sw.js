@@ -1,4 +1,4 @@
-const CACHE_NAME = "content_hub_v2.12";
+const CACHE_NAME = "content_hub_v2.13";
 
 const CORE_ASSETS = [
   "./",
@@ -23,9 +23,13 @@ const CORE_ASSETS = [
   "./assets/text/lyrics-projektplan.txt",
   "./assets/text/lyrics-archiv.txt",
   "./assets/text/lyrics-ressourcen.txt",
+  "./assets/images/home-notes_v1.png",
   "./assets/images/home-songs.png",
+  "./assets/images/home-songs_v1.png",
   "./assets/images/home-notes.png",
   "./assets/images/home-sonstiges.png",
+  "./assets/images/home-sonstiges_v1.png",
+  "./assets/images/keyboard.jpg",
   "./assets/images/song-akustisch.png",
   "./assets/images/song-youtube.png",
   "./assets/images/song-sammlung.png",

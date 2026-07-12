@@ -88,12 +88,12 @@
           "id": "notes_02",
           "title": "Happy Birthday To You",
           "summary": "",
-          "image": "assets/images/keyboard.jpg",
+          "image": "https://img.youtube.com/vi/0anN6sE7GCg/sddefault.jpg",
           "imageAlt": "Aufnahme-Notiz mit Pegeln",
           "text": "",
           "media": {
-            "kind": "internal-audio",
-            "src": "assets/audio/acoustic-loop.wav",
+            "kind": "youtube",
+            "src": "https://www.youtube-nocookie.com/embed/0anN6sE7GCg?rel=0&modestbranding=1&controls=1&iv_load_policy=3&showinfo=0",
             "title": "Happy Birthday To You"
           },
           "lyricsFile": "",

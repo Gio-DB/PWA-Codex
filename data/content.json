@@ -78,7 +78,7 @@
           "text": "Text und Bild koennen kombiniert oder einzeln genutzt werden.",
           "media": {
             "kind": "internal-audio",
-            "src": "assets/audio/acoustic-loop.wav",
+            "src": "assets/audio/blockflote/08_lirum_larum_loffelstiel_nice.m4a",
             "title": "Aufnahme-Notiz"
           },
           "lyricsFile": "assets/text/lyrics-notiz-aufnahme.txt",

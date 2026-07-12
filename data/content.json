@@ -14,7 +14,7 @@
       "homeTextFile": "assets/text/home-songs.txt",
       "items": [
         {
-          "id": "01",
+          "id": "disney_01",
           "title": "Do You Want to Build a Snowman?",
           "summary": "Agatha Lee Monn, Katie Lopez, Kristen Bell, and Idina Menzel.",
           "image": "https://img.youtube.com/vi/TeQ_TTyLGMs/sddefault.jpg",
@@ -29,7 +29,7 @@
           "pdf": "assets/pdfs/song-sheet.pdf"
         },
         {
-          "id": "02",
+          "id": "disney_02",
           "title": "Let It Go",
           "summary": "Externer YouTube-Frame mit austauschbarer Video-ID.",
           "image": "https://img.youtube.com/vi/L0MK7qz13bU/sddefault.jpg",
@@ -44,7 +44,7 @@
           "pdf": "assets/pdfs/song-sheet.pdf"
         },
         {
-          "id": "03",
+          "id": "disney_03",
           "title": "Can I Get A Chee Hoo?",
           "summary": "---",
           "image": "https://img.youtube.com/vi/HnnvrFJEGts/sddefault.jpg",
@@ -70,7 +70,7 @@
       "homeTextFile": "assets/text/home-notes.txt",
       "items": [
         {
-          "id": "notiz-aufnahme",
+          "id": "notes_01",
           "title": "Aufnahme-Notiz",
           "summary": "Eine Notiz mit eingebettetem Audioframe und PDF.",
           "image": "assets/images/note-aufnahme.png",
@@ -78,20 +78,20 @@
           "text": "Text und Bild koennen kombiniert oder einzeln genutzt werden.",
           "media": {
             "kind": "internal-audio",
-            "src": "assets/audio/blockflote/08_lirum_larum_loffelstiel_nice.m4a",
+            "src": "assets/audio/keyboard/05_merrily_we_roll_along.m4a",
             "title": "Aufnahme-Notiz"
           },
           "lyricsFile": "assets/text/lyrics-notiz-aufnahme.txt",
           "pdf": "assets/pdfs/01_blockfloete.pdf"
         },
         {
-          "id": "projektplan",
+          "id": "notes_02",
           "title": "Projektplan",
           "summary": "Textlastiger Eintrag ohne Vorschaubild im Grid.",
           "text": "Dieses Grid zeigt nur Text und fuehrt trotzdem zur Detailseite.",
           "media": {
-            "kind": "youtube",
-            "src": "https://www.youtube-nocookie.com/embed/ysz5S6PUM-U",
+            "kind": "internal-audio",
+            "src": "assets/audio/acoustic-loop.wav",
             "title": "Projektplan Video"
           },
           "lyricsFile": "assets/text/lyrics-projektplan.txt",

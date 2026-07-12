@@ -1,4 +1,4 @@
-const CACHE_NAME = "content_hub_v2.8";
+const CACHE_NAME = "content_hub_v2.10";
 
 const CORE_ASSETS = [
   "./",
@@ -36,7 +36,8 @@ const CORE_ASSETS = [
   "./assets/icons/icon-192.png",
   "./assets/icons/icon-512.png",
   "./assets/audio/acoustic-loop.wav",
-  "./assets/audio/blockflote/08_lirum_larum_loffelstiel_nice.m4a",
+  "./assets/audio/blockfloete/08_lirum_larum_loffelstiel_nice.m4a",
+  "./assets/audio/keyboard/05_merrily_we_roll_along.m4a",
   "./assets/pdfs/song-sheet.pdf",
   "./assets/pdfs/notes-sheet.pdf",
   "./assets/pdfs/misc-sheet.pdf"

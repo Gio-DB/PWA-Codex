@@ -1,4 +1,4 @@
-const CACHE_NAME = "content_hub_v2.10";
+const CACHE_NAME = "content_hub_v2.12";
 
 const CORE_ASSETS = [
   "./",
@@ -38,6 +38,9 @@ const CORE_ASSETS = [
   "./assets/audio/acoustic-loop.wav",
   "./assets/audio/blockfloete/08_lirum_larum_loffelstiel_nice.m4a",
   "./assets/audio/keyboard/05_merrily_we_roll_along.m4a",
+  "./assets/pdfs/02_Happy Birthday To You.pdf",
+  "./assets/pdfs/05_merrily_we_roll_along.pdf",
+  "./assets/pdfs/08_Lirum larum Löffelstiel.pdf",
   "./assets/pdfs/song-sheet.pdf",
   "./assets/pdfs/notes-sheet.pdf",
   "./assets/pdfs/misc-sheet.pdf"

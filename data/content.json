@@ -158,13 +158,13 @@
       ]
     },
         {
-      "key": "detail",
-      "label": "Detail 123",
-      "page": "detail.html",
-      "description": "Song-Ideen, Demos und Sammlungen mit Medienframe, Lyrics und PDF.",
-      "homeImage": "assets/images/home-songs_v1.png",
+      "key": "sicilia",
+      "label": "sicilia",
+      "page": "04_sicilia.html",
+      "description": "---",
+      "homeImage": "assets/images/sicilia_cover.jpg",
       "homeImageAlt": "Grafische Song-Wellenform",
-      "homeTextFile": "assets/text/home-songs.txt",
+      "homeTextFile": "assets/text/home-sicilia.txt",
       "items": [
         {
           "id": "akustische-skizze",

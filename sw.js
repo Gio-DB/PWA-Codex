@@ -1,4 +1,4 @@
-const CACHE_NAME = "content_hub_v2.14";
+const CACHE_NAME = "content_hub_v2.15";
 
 const CORE_ASSETS = [
   "./",
@@ -7,6 +7,7 @@ const CORE_ASSETS = [
   "./songs.html",
   "./2_notes.html",
   "./3_italy.html",
+  "./04_sicilia.html",
   "./detail.html",
   "./player.html",
   "./manifest.webmanifest",
@@ -20,6 +21,7 @@ const CORE_ASSETS = [
   "./assets/text/home-songs.txt",
   "./assets/text/home-notes.txt",
   "./assets/text/home-italy.txt",
+  "./assets/text/home-sicilia.txt",
   "./assets/text/lyrics-notiz-aufnahme.txt",
   "./assets/text/lyrics-projektplan.txt",
   "./assets/text/lyrics-archiv.txt",

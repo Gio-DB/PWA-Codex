@@ -1,12 +1,12 @@
-const CACHE_NAME = "content_hub_v2.13";
+const CACHE_NAME = "content_hub_v2.14";
 
 const CORE_ASSETS = [
   "./",
   "./index.html",
   "./1_disney.html",
   "./songs.html",
-  "./notes.html",
-  "./sonstiges.html",
+  "./2_notes.html",
+  "./3_italy.html",
   "./detail.html",
   "./player.html",
   "./manifest.webmanifest",
@@ -16,9 +16,10 @@ const CORE_ASSETS = [
   "./assets/text/disney_01.txt",
   "./assets/text/disney_02.txt",
   "./assets/text/disney_03.txt",
+  "./assets/text/disney_04.txt",
   "./assets/text/home-songs.txt",
   "./assets/text/home-notes.txt",
-  "./assets/text/home-sonstiges.txt",
+  "./assets/text/home-italy.txt",
   "./assets/text/lyrics-notiz-aufnahme.txt",
   "./assets/text/lyrics-projektplan.txt",
   "./assets/text/lyrics-archiv.txt",
@@ -29,6 +30,8 @@ const CORE_ASSETS = [
   "./assets/images/home-notes.png",
   "./assets/images/home-sonstiges.png",
   "./assets/images/home-sonstiges_v1.png",
+  "./assets/images/Italy_cover_2.png",
+  "./assets/images/Italy_cover.png",
   "./assets/images/keyboard.jpg",
   "./assets/images/song-akustisch.png",
   "./assets/images/song-youtube.png",

@@ -57,13 +57,28 @@
           },
           "lyricsFile": "assets/text/disney_03.txt",
           "pdf": "assets/pdfs/song-sheet.pdf"
+        },
+        {
+          "id": "disney_04",
+          "title": "Dance Monkey",
+          "summary": "---",
+          "image": "https://img.youtube.com/vi/q0hyYWKXF0Q/sddefault.jpg",
+          "imageAlt": "---",
+          "text": "Dance Monkey - Lied von Tones and I",
+          "media": {
+            "kind": "youtube",
+            "src": "https://www.youtube-nocookie.com/embed/q0hyYWKXF0Q?rel=0&modestbranding=1&controls=1&iv_load_policy=3&showinfo=0",
+            "title": "Dance Monkey"
+          },
+          "lyricsFile": "assets/text/disney_04.txt",
+          "pdf": ""
         }
       ]
     },
     {
       "key": "notes",
       "label": "Notes",
-      "page": "notes.html",
+      "page": "2_notes.html",
       "description": "Notizen, Mitschnitte und Arbeitsmaterial mit gleicher Grid-Struktur.",
       "homeImage": "assets/images/home-notes_v1.png",
       "homeImageAlt": "Notizblatt mit Linien",
@@ -102,31 +117,31 @@
       ]
     },
     {
-      "key": "sonstiges",
-      "label": "Sonstiges",
-      "page": "sonstiges.html",
-      "description": "Freie Inhalte fuer alles, was nicht direkt Songs oder Notes ist.",
-      "homeImage": "assets/images/home-sonstiges_v1.png",
+      "key": "italy",
+      "label": "Italy",
+      "page": "3_italy.html",
+      "description": "Le mie canzoni piu belli d'italia.",
+      "homeImage": "assets/images/Italy_cover.png",
       "homeImageAlt": "Mosaik aus freien Inhalten",
-      "homeTextFile": "assets/text/home-sonstiges.txt",
+      "homeTextFile": "assets/text/home-italy.txt",
       "items": [
         {
-          "id": "archiv",
-          "title": "Archiv",
-          "summary": "Ein Archiv-Eintrag mit Bild, Text, Medienframe und PDF.",
-          "image": "assets/images/misc-archiv.png",
+          "id": "italy_01",
+          "title": "Sei Solo tu",
+          "summary": "---",
+          "image": "https://img.youtube.com/vi/gMq0u1-Oljo/sddefault.jpg",
           "imageAlt": "Archiv-Grafik",
-          "text": "Fuer Referenzen, alte Versionen oder Zusatzmaterial.",
+          "text": "Angela Amico - Sei Solo tu",
           "media": {
-            "kind": "internal-audio",
-            "src": "assets/audio/acoustic-loop.wav",
-            "title": "Archiv Audio"
+            "kind": "youtube",
+            "src": "https://www.youtube-nocookie.com/embed/gMq0u1-Oljo?rel=0&modestbranding=1&controls=1&iv_load_policy=3&showinfo=0",
+            "title": "Sei Solo tu"
           },
           "lyricsFile": "assets/text/lyrics-archiv.txt",
           "pdf": "assets/pdfs/misc-sheet.pdf"
         },
         {
-          "id": "ressourcen",
+          "id": "italy_02",
           "title": "Ressourcen",
           "summary": "Links und Unterlagen mit optionalem Vorschaubild.",
           "image": "assets/images/misc-ressourcen.png",

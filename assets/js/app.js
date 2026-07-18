@@ -69,11 +69,17 @@ async function getText(url) {
     return "";
   }
 
-  const response = await fetch(url);
-  if (!response.ok) {
+  try {
+    const response = await fetch(url, { cache: "no-cache" });
+    if (!response.ok) {
+      console.warn(`Text nicht geladen: ${url} (${response.status})`);
+      return "";
+    }
+    return response.text();
+  } catch (error) {
+    console.warn(`Text nicht geladen: ${url}`, error);
     return "";
   }
-  return response.text();
 }
 
 function renderNav(data, activeKey) {

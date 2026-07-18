@@ -1,4 +1,4 @@
-const CACHE_NAME = "content_hub_v2.15";
+const CACHE_NAME = "content_hub_v2.16";
 
 const CORE_ASSETS = [
   "./",
@@ -30,8 +30,6 @@ const CORE_ASSETS = [
   "./assets/images/home-songs.png",
   "./assets/images/home-songs_v1.png",
   "./assets/images/home-notes.png",
-  "./assets/images/home-sonstiges.png",
-  "./assets/images/home-sonstiges_v1.png",
   "./assets/images/Italy_cover_2.png",
   "./assets/images/Italy_cover.png",
   "./assets/images/keyboard.jpg",

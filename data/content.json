@@ -159,7 +159,7 @@
     },
         {
       "key": "sicilia",
-      "label": "sicilia",
+      "label": "Sicilia",
       "page": "04_sicilia.html",
       "description": "---",
       "homeImage": "assets/images/sicilia_cover.jpg",
@@ -167,49 +167,49 @@
       "homeTextFile": "assets/text/home-sicilia.txt",
       "items": [
         {
-          "id": "akustische-skizze",
-          "title": "Akustische Skizze v1.2",
+          "id": "sicilia_01",
+          "title": "Gian Campione - U Basilico",
           "summary": "Interne Audiodatei mit Lyrics und PDF-Lead-Sheet.",
-          "image": "assets/images/song-akustisch.png",
+          "image": "https://img.youtube.com/vi/Y_ycC00w7zU/sddefault.jpg",
           "imageAlt": "Akustische Song-Grafik",
-          "text": "Lokale Audiodatei in einem internen Frame mit Text und PDF.",
-          "media": {
-            "kind": "internal-audio",
-            "src": "assets/audio/acoustic-loop.wav",
-            "title": "Akustische Skizze v1.3"
-          },
-          "lyricsFile": "assets/text/lyrics-akustische-skizze.txt",
-          "pdf": "assets/pdfs/01_example.pdf"
-        },
-        {
-          "id": "02",
-          "title": "Let It Go",
-          "summary": "Externer YouTube-Frame mit austauschbarer Video-ID.",
-          "image": "https://i3.ytimg.com/vi/YVVTZgwYwVo/hqdefault.jpg",
-          "imageAlt": "Video-Frame-Grafik",
-          "text": "by Idina Menzel",
+          "text": "---",
           "media": {
             "kind": "youtube",
-            "src": "https://www.youtube-nocookie.com/embed/L0MK7qz13bU?rel=0&modestbranding=1&controls=1&iv_load_policy=3&showinfo=0",
-            "title": "YouTube Demo"
+            "src": "https://www.youtube-nocookie.com/embed/Y_ycC00w7zU?rel=0&modestbranding=1&controls=1&iv_load_policy=3&showinfo=0",
+            "title": "U Basilico"
           },
-          "lyricsFile": "assets/text/lyrics-youtube-demo.txt",
-          "pdf": "assets/pdfs/song-sheet.pdf"
+          "lyricsFile": "assets/text/sicilia_01.txt",
+          "pdf": ""
         },
         {
-          "id": "sammlung",
-          "title": "Song-Sammlung",
-          "summary": "Eine textorientierte Song-Sammlung mit optionalem Bild.",
-          "image": "assets/images/song-sammlung.png",
-          "imageAlt": "Song-Sammlung als Kartenstapel",
-          "text": "Mehrere Ideen in einem Eintrag; die Anzahl der Karten kommt aus JSON.",
+          "id": "sicilia_02",
+          "title": "Gian Campione - Talia Che Muscia",
+          "summary": "---",
+          "image": "https://i3.ytimg.com/vi/CKGT7S0zcRw/hqdefault.jpg",
+          "imageAlt": "Video-Frame-Grafik",
+          "text": "---",
           "media": {
-            "kind": "internal-audio",
-            "src": "assets/audio/acoustic-loop.wav",
-            "title": "Song-Sammlung"
+            "kind": "youtube",
+            "src": "https://www.youtube-nocookie.com/embed/CKGT7S0zcRw?rel=0&modestbranding=1&controls=1&iv_load_policy=3&showinfo=0",
+            "title": "Talia Che Muscia"
           },
-          "lyricsFile": "assets/text/lyrics-sammlung.txt",
-          "pdf": "assets/pdfs/song-sheet.pdf"
+          "lyricsFile": "assets/text/sicilia_02.txt",
+          "pdf": ""
+        },
+        {
+          "id": "sicilia_03",
+          "title": "Gian Campione - Passa u ricuttaru",
+          "summary": "---",
+          "image": "https://i3.ytimg.com/vi/j24D7EI3d1Q/hqdefault.jpg",
+          "imageAlt": "Song-Sammlung als Kartenstapel",
+          "text": "---",
+          "media": {
+            "kind": "youtube",
+            "src": "https://www.youtube-nocookie.com/embed/j24D7EI3d1Q?rel=0&modestbranding=1&controls=1&iv_load_policy=3&showinfo=0",
+            "title": "Passa u ricuttaru"
+          },
+          "lyricsFile": "assets/text/sicilia_03.txt",
+          "pdf": ""
         }
       ]
     }

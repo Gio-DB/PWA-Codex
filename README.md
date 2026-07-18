@@ -1,6 +1,6 @@
 # Content Hub PWA
 
-Statische PWA fuer GitHub Pages mit Home, Songs, Notes und Sonstiges.
+Statische PWA fuer GitHub Pages mit Home, Disney, Notes und Italy.
 
 ## Seitenstruktur
 
@@ -8,11 +8,11 @@ Statische PWA fuer GitHub Pages mit Home, Songs, Notes und Sonstiges.
 
 Die App nutzt zwei HTML-Einstiegspunkte, die vom JavaScript gesteuert werden:
 
-- **index.html** - Die Startseite (Hub). Zeigt die Kategorieübersicht (Home, Songs, Notes, Sonstiges) mit Karten, die `homeImage` und `homeTextFile` nutzen. Das `data-page="home"` Attribut teilt dem JavaScript mit, welcher Seitentyp geladen wird.
+- **index.html** - Die Startseite (Hub). Zeigt die Kategorieübersicht (Home, Disney, Notes, Italy) mit Karten, die `homeImage` und `homeTextFile` nutzen. Das `data-page="home"` Attribut teilt dem JavaScript mit, welcher Seitentyp geladen wird.
 
 - **detail.html** - Die Detailseite für einzelne Items. Zeigt einen Content mit Medienframe (Audio/Video), Lyrics und PDF. Das `data-page="detail"` Attribut steuert die Detail-Ansicht. Diese Seite wird aufgerufen, wenn man auf ein Item klickt.
 
-- **songs.html, notes.html, sonstiges.html** - Kategorieseiten für die einzelnen Sammlungen. Zeigen das Grid der Items einer Kategorie mit `image` und `text`/`textFile`.
+- **1_disney.html, 2_notes.html, 3_italy.html** - Kategorieseiten für die einzelnen Sammlungen. Zeigen das Grid der Items einer Kategorie mit `image` und `text`/`textFile`.
 
 - **player.html** - Mediaplayer-Interface für Audio- und Videoinhalte mit spezieller Steuerung.
 
@@ -39,9 +39,9 @@ Dann im Browser `http://localhost:4173/` oeffnen.
 PWA-Codex/
 ├── index.html                    # Startseite (Hub) - zeigt Kategorieübersicht
 ├── detail.html                   # Detailseite für einzelne Items (Audio, Video, Lyrics, PDF)
-├── songs.html                    # Kategorieseite für Songs
-├── notes.html                    # Kategorieseite für Notes/Notizen
-├── sonstiges.html                # Kategorieseite für Sonstiges
+├── 1_disney.html                 # Kategorieseite für Disney-Songs
+├── 2_notes.html                  # Kategorieseite für Notes/Notizen
+├── 3_italy.html                  # Kategorieseite für Italy-Inhalte
 ├── player.html                   # Media-Player Interface für Audio/Video
 ├── manifest.webmanifest          # PWA Manifest - App-Metadaten, Icons, Display-Modi
 ├── sw.js                         # Service Worker - Offline-Funktionalität und Caching
@@ -85,7 +85,7 @@ PWA-Codex/
 
 1. **app.js** liest `data/content.json` und rendert basierend auf der aktuellen Seite (`data-page`):
    - `home`: Zeigt Kategorien mit `homeImage` und Text aus `homeTextFile`
-   - `songs`/`notes`/`sonstiges`: Zeigt Items mit Bildern und Text
+   - `disney`/`notes`/`italy`: Zeigt Items mit Bildern und Text
    - `detail`: Zeigt einzelnes Item mit Media, Lyrics und PDF
 
 2. **sw.js** (Service Worker) ermöglicht Offline-Nutzung durch Caching von Assets

@@ -32,7 +32,7 @@
     },
     {
       "name": "Notes",
-      "url": "./notes.html",
+      "url": "./2_notes.html",
       "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }]
     }
   ]
